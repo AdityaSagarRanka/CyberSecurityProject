@@ -2,7 +2,7 @@ print("*****===***** OPTIONS *****===*****")
 
 print("1. Vuln Scan")
 
-print("2. Health Scan")
+print("2. System Health Scan")
 
 print("3. Sten")
 
