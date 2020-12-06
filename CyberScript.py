@@ -10,29 +10,30 @@ print("4. Encryption")
 
 
 
-a=input("\n Enter the option number you want to use : ")
+
+
+a=int(input("\n Enter the option number you want to use : "))
 
 if(a==1):
 
 	print("\nWelcome to Vulnerability Scanning")
 
-	execfile('cyber.py')
+	exec(open("./cyber.py").read())
 
 	
 
 elif(a==2):
 
-	print("\nWelcome to encryption")
+	print("\nSystem Health info")
 
-	execfile('enc.py')
-
+	exec(open("./syscheck.py").read())
 	
 
 elif(a==3):
 
 	print("\nWelcome to Steganography")
 
-	execfile('steganography.py')
+	exec(open("./steganography.py").read())
 
 
 
@@ -40,7 +41,8 @@ elif(a==4):
 
 	print("\nWelcome to encryption")
 
-	execfile('enc.py')
+	exec(open("./encryption.py").read())
+
 
 	
 

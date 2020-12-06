@@ -1,5 +1,6 @@
-from Crypto import Random
-from Crypto.Cipher import AES
+
+from crypto import Random
+from crypto.Cipher import AES
 from pyDes import *
 
 
