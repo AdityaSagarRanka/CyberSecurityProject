@@ -63,7 +63,7 @@ keyAES = b'\xbf\xc0\x85)\x10nc\x94\x02)j\xdf\xcb\xc4\x94\x9d(\x9e[EX\xc8\xd5\xbf
 keyDES = des("MyDESkey")
 
 
-encryptAESfile(keyAES)
-#decryptAESfile(keyAES)
-encryptDESFile(keyDES)
+#encryptAESfile(keyAES)
+decryptAESfile(keyAES)
+#encryptDESFile(keyDES)
 #decryptDESFile(keyDES)
