@@ -1,3 +1,10 @@
+import pyfiglet 
+  
+result = pyfiglet.figlet_format("The Cyber Sanjay", font = "banner3-D" ) 
+print(result) 
+
+
+
 print("*****===***** OPTIONS *****===*****")
 
 print("1. Vulnerability Scan")
