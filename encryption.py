@@ -4,6 +4,7 @@ print("1. Encrypt")
 
 print ("2. Hash")
 
+print ("3. Back")
 
 
 a=int(input("\n Enter the option number you want to use : "))
@@ -21,6 +22,10 @@ elif(a==2):
 	print("\nHash it out, here!")
 
 	exec(open("./hash.py").read())
+	
+elif(a==3):
+
+	exec(open("./CyberScript.py").read())
 
 	
 

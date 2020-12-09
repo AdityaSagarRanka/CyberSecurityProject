@@ -1,6 +1,9 @@
 import psutil
 import platform
 from datetime import datetime
+import tkinter
+import tkinter.messagebox
+import ctypes 
 
 def get_size(bytes, suffix="B"):
     """
@@ -43,6 +46,15 @@ print("CPU Usage Per Core:")
 for i, percentage in enumerate(psutil.cpu_percent(percpu=True, interval=1)):
     print(f"Core {i}: {percentage}%")
 print(f"Total CPU Usage: {psutil.cpu_percent()}%")
+def Mbox(title, text, style):
+    return ctypes.windll.user32.MessageBoxW(0, text, title, style)
+
+print (psutil.cpu_percent(interval=1))
+
+
+
+
+
 
 print("="*40, "Memory Information", "="*40)
 # get the memory details
@@ -51,6 +63,7 @@ print(f"Total: {get_size(svmem.total)}")
 print(f"Available: {get_size(svmem.available)}")
 print(f"Used: {get_size(svmem.used)}")
 print(f"Percentage: {svmem.percent}%")
+
 print("="*20, "SWAP", "="*20)
 # get the swap memory details (if exists)
 swap = psutil.swap_memory()
@@ -100,3 +113,14 @@ for interface_name, interface_addresses in if_addrs.items():
 net_io = psutil.net_io_counters()
 print(f"Total Bytes Sent: {get_size(net_io.bytes_sent)}")
 print(f"Total Bytes Received: {get_size(net_io.bytes_recv)}")
+if svmem.percent>70 and  psutil.cpu_percent(interval=1)>2:
+    Mbox('Alert', 'High memory usage!!', 1)
+    Mbox('Alert', 'High CPU usage!!', 1)
+    
+elif svmem.percent>70:
+    Mbox('Alert', 'High memory usage!!', 1)
+    
+elif  psutil.cpu_percent(interval=1)>2:
+     Mbox('Alert', 'High CPU usage!!', 1)
+
+
