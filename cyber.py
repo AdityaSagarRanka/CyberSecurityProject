@@ -6,6 +6,8 @@ print ("2. SQLI")
 
 print ("3. Recon")
 
+print ("4. Back")
+
 
 
 a=int(input("\n Enter the option number you want to use : "))
@@ -14,9 +16,7 @@ if(a==1):
 
 	print("\nWelcome to XSS")
 
-	exec(open("./xss_scan").read())
-
-	
+	exec(open("./xss_scan").read())	
 
 elif(a==2):
 
@@ -28,6 +28,10 @@ elif(a==3):
 	print("\nWelcome to Recon")
 	
 	exec(open("./runsh.py").read())
+	
+elif(a==4):
+
+	exec(open("./CyberScript.py").read())
 	
 
 else:
