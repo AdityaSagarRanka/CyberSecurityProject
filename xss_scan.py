@@ -123,5 +123,5 @@ def scan_sql_injection(url):
 
 if __name__ == "__main__":
     import sys
-    url = sys.argv[1]
+    url =input('Enter the url :')
     scan_sql_injection(url)
