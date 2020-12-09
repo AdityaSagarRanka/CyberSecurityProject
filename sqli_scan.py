@@ -123,6 +123,5 @@ def scan_sql_injection(url):
 
 if __name__ == "__main__":
     import sys
-    url=input("Enter the URL you wanna destroy : ")
-    
+    url= input("Enter the URL : ")
     scan_sql_injection(url)
