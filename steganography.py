@@ -286,7 +286,7 @@ def main():
 		
 	elif(a==3):
 
-		exec(open("./cyberscript.py").read())
+		exec(open("./CyberScript.py").read())
 
 	else:
 
