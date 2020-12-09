@@ -274,17 +274,19 @@ def main():
 
 	a = int(input(":: Welcome to Steganography ::\n"
 
-						"1. Encode\n2. Decode\n"))
+						"1. Encode\n2. Decode\n3. Back\n"))
 
 	if (a == 1):
 
 		encode()
 
-
-
 	elif (a == 2):
 
 		print("\n Decoded Word : " + decode())
+		
+	elif(a==3):
+
+		exec(open("./cyberscript.py").read())
 
 	else:
 
