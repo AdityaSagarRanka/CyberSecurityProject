@@ -2,8 +2,13 @@ import pyfiglet
   
 result = pyfiglet.figlet_format("The Cyber Sanjay", font = "banner3-D" ) 
 print(result) 
-
-
+print("\n=======================================================================\n")
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~  Creators  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+print("Param Bhawnani")
+print("Shashwat Mishra")
+print("Aditya Sagar Ranka")
+print("Vidit Solanki")
+print("\n=======================================================================\n")
 
 print("*****===***** OPTIONS *****===*****")
 
@@ -14,6 +19,8 @@ print("2. System Health Scan")
 print("3. Steganography")
 
 print("4. Encryption")
+
+print("5. Exit")
 
 
 
@@ -50,6 +57,9 @@ elif(a==4):
 
 	exec(open("./encryption.py").read())
 
+elif(a==5):
+
+    exit()
 
 	
 

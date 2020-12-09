@@ -62,8 +62,58 @@ def decryptDESFile(k):
 keyAES = b'\xbf\xc0\x85)\x10nc\x94\x02)j\xdf\xcb\xc4\x94\x9d(\x9e[EX\xc8\xd5\xbfI{\xa2$\x05(\xd5\x18'
 keyDES = des("MyDESkey")
 
+a = int(input(":: Welcome to Encryption/Decryption ::\n"
 
-#encryptAESfile(keyAES)
-decryptAESfile(keyAES)
-#encryptDESFile(keyDES)
-#decryptDESFile(keyDES)
+                    "1. AES\n2. DES\n3. Back\n"))
+
+if (a == 1):
+
+    b = int(input(":: Welcome to AES Encryption ::\n"
+
+						"1. Encrypt\n2. Decrypt\n3. Back\n"))
+
+    if (b == 1):
+
+        encryptAESfile(keyAES)
+
+    elif (b == 2):
+
+        decryptAESfile(keyAES)
+		
+    elif(b==3):
+
+        exec(open("./encrypt.py").read())
+
+    else:
+
+        raise Exception("Enter correct input")
+
+elif (a == 2):
+
+    c = int(input(":: Welcome to DES Encryption ::\n"
+
+						"1. Encrypt\n2. Decrypt\n3. Back\n"))
+
+    if (c == 1):
+
+        encryptDESFile(keyDES)
+
+    elif (c == 2):
+
+        decryptDESFile(keyDES)
+		
+    elif(c==3):
+
+        exec(open("./encrypt.py").read())
+
+    else:
+
+        raise Exception("Enter correct input")
+    
+elif(a==3):
+
+    exec(open("./CyberScript.py").read())
+
+else:
+
+    raise Exception("Enter correct input")

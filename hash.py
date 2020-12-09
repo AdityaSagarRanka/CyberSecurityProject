@@ -20,5 +20,22 @@ def MD5hash():
     digest = md5_hash.hexdigest()
     print("MD5 Hash: " + digest)
 
-SHA256hash()
-MD5hash()
+a = int(input(":: Welcome to Hashing ::\n"
+
+                    "1. SHA256\n2. MD5\n3. Back\n"))
+
+if (a == 1):
+
+    SHA256hash()
+
+elif (a == 2):
+
+    MD5hash()
+
+elif ( a == 3):
+
+    exec(open("./hash.py").read())
+    
+else:
+
+    raise Exception("Enter correct input")

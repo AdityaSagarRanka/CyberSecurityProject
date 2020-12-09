@@ -37,3 +37,15 @@ elif(a==4):
 else:
 
 	print("\nInvalid Option\n")
+
+print("1. Back")
+print("2. Exit")
+
+b = int(input("Choose an option: "))
+
+if(b==1):
+	exec(open("./CyberScript.py").read())
+elif(b==2):
+    exit()
+else:
+    print("Invalid input")

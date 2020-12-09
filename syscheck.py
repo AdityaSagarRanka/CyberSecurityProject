@@ -124,3 +124,13 @@ elif  psutil.cpu_percent(interval=1)>2:
      Mbox('Alert', 'High CPU usage!!', 1)
 
 
+print ("1. Back")
+print ("2. Exit")
+a = int(input("Choose any option: "))
+
+if(a==1):
+	exec(open("./CyberScript.py").read())
+elif(a==2):
+    exit()
+else:
+    print("Invalid input")
